@@ -143,25 +143,14 @@
       </td>
       </tr>
   </tbody></table>
-<iframe src="/Nineties Website_files/modem.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+<iframe class="audio" loop autoplay="autoplay" controls style = "display:none;">
+    <source src="modem.ogg" type="audio/ogg"/>
+    <source src="modem.mp3" type="audio/mpeg"/>
 </iframe>
-
-<audio autoplay loop  id="playAudio">
-    <source src="/Nineties Website_files/modem.mp3">
-</audio>
-<script>
- var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }
-</script>
     
   <object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95" height="0px">
     <param name="FileName" value="sound.mp3">
-    <param name="autoplay" value="true">
+    <param name="autoplay" value="false">
     <object type="audio/mpeg" data="./Nineties Website_files/modem.mp3" height="0px">
       <param name="controller" value="true">
       <param name="autoplay" value="true">
